@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_workshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello World" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEE-W9-zMY">
+                                <rect key="frame" x="27.5" y="182.5" width="320" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="0.55256932218309862" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="NGf-ZS-ttO"/>
+                                    <constraint firstAttribute="width" constant="320" id="QDr-F8-D3i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvf-7u-LjL">
+                                <rect key="frame" x="87.5" y="513.5" width="200" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="0.49227002640845069" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="s4X-ub-8KD"/>
+                                    <constraint firstAttribute="width" constant="200" id="tAQ-Hx-LNU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="27"/>
+                                <state key="normal" title="Inspire Me!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="It9-AB-IEW"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.jpg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="92T-Mu-e5q">
+                                <rect key="frame" x="0.0" y="78" width="375" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94788340507049051" green="1" blue="0.90228416985336124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xEE-W9-zMY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6gD-kD-cKa"/>
+                            <constraint firstItem="xEE-W9-zMY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BkI-mu-pEy"/>
+                            <constraint firstItem="xEE-W9-zMY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TiV-89-9NL"/>
+                            <constraint firstItem="xEE-W9-zMY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V8h-iW-182"/>
+                            <constraint firstItem="xEE-W9-zMY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cxi-0o-pbr"/>
+                            <constraint firstItem="nvf-7u-LjL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oP4-Cx-FEw"/>
+                            <constraint firstItem="nvf-7u-LjL" firstAttribute="top" secondItem="xEE-W9-zMY" secondAttribute="bottom" constant="30" id="xOu-rg-tuN"/>
+                            <constraint firstItem="xEE-W9-zMY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xd4-5c-sBd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonStart" destination="nvf-7u-LjL" id="USO-8K-uLu"/>
+                        <outlet property="countLabel" destination="xEE-W9-zMY" id="Uk3-HX-LNf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.jpg" width="900" height="159"/>
+    </resources>
+</document>
